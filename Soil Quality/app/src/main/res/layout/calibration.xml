@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+
+    <Button
+        android:id="@+id/calibrate"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/Calibrate"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/taken_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calibrate"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logo_new" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="81dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="4dp"
+        android:text="NOTE:"
+        android:textAlignment="viewStart"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="359dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="22dp"
+        android:text="Please take a picture of clear sky(without any objects eg. Trees, Birds, clouds etc) to calibrate your device for maximum accuracy. "
+        android:textAlignment="gravity"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/calibrate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="191dp"
+        android:background="@drawable/btn_bg"
+        android:text="Take from Gallery"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calibrate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

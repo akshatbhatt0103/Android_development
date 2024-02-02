@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Soil Quality</string>
+    <string name="coarse_grain_soil">Coarse Texture soil</string>
+    <string name="fine_grain_soil">Fine Texture soil</string>
+    <string name="medium_grain_soil">Medium Texture soil</string>
+    <string name="proceed">Proceed</string>
+    <string name="please_select_the_soil_texture">Please select the soil texture:</string>
+    <string name="taken_image">Taken_image</string>
+    <string name="image">image</string>
+    <string name="contents_of_soil">Nutrients of Soil</string>
+    <string name="soil_analysis">SOIL ANALYSIS</string>
+    <string name="organic_carbon">Organic Carbon:</string>
+    <string name="nitrogen">Nitrogen:</string>
+    <string name="clay">Clay:</string>
+    <string name="Calibrate">Take Picture</string>
+    <!-- Strings used for fragments for navigation -->
+
+</resources>

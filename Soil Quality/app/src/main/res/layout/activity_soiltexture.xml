@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".soiltexture">
+
+
+    <Button
+        android:id="@+id/send_data"
+        android:layout_width="184dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/proceed"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <ImageView
+        android:id="@+id/imageshow"
+        android:layout_width="394dp"
+        android:layout_height="303dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/image"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="370dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bottom_bg2"
+        app:layout_constraintBottom_toTopOf="@+id/send_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageshow">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="338dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="200dp"
+            android:text="@string/please_select_the_soil_texture"
+            android:textColor="#492C23"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/radio_group"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="@+id/radio_group"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="308dp"
+            android:layout_height="172dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:layout_width="300dp"
+                android:layout_height="59dp"
+                android:padding="10dp"
+                android:text="@string/coarse_grain_soil"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="300dp"
+                android:layout_height="59dp"
+                android:padding="10dp"
+                android:text="@string/medium_grain_soil"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="300dp"
+                android:layout_height="59dp"
+                android:padding="10dp"
+                android:text="@string/fine_grain_soil"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/taken_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_new" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
